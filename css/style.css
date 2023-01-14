@@ -87,6 +87,7 @@ nav > .logo > a > h4 {
 
 .banner {
   display: flex;
+  align-items: center;
   column-gap: 30px;
 }
 
@@ -204,6 +205,15 @@ nav > .logo > a > h4 {
   width: 100%;
   object-fit: cover;
 }
+
+
+
+
+
+
+
+
+
 
 /* ----------responsive part---------------- */
 
