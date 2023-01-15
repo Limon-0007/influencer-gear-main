@@ -258,6 +258,42 @@ nav > .logo > a > h4 {
   background-color: var(--clr-3);
 }
 
+/* ---------footer section starts from here----------- */
+
+.footer {
+  background-color: var(--clr-7);
+  text-align: center;
+  padding: 2rem 1rem;
+  color: var(--clr-3);
+}
+
+.footer-heading {
+  font-size: 28px;
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-4);
+  margin-bottom: 10px;
+}
+.footer-text {
+  font-size: 17px;
+  font-family: var(--font-secondary);
+  font-weight: var(--font-weight-4);
+  color: #D9DBE1;
+  margin-bottom: 6px;
+}
+
+.footer i {
+  padding: 7px;
+  margin: 7px;
+  font-size: 28px;
+  background-color: var(--clr-8);
+  border-radius: 50%;
+  transition: 0.5s ease-in-out;
+}
+.footer i:hover {
+ transform: scale(1.2);
+ color: var(--clr-7);
+}
+
 /* ----------responsive part---------------- */
 
 @media screen and (max-width: 992px) {
