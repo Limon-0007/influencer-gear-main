@@ -168,7 +168,7 @@ nav > .logo > a > h4 {
   border-radius: 7px;
 }
 
-#products  .cards  .card  .card-title {
+#products .cards .card .card-title {
   font-family: var(--font-primary);
   font-weight: var(--font-weight-2);
   font-size: 24px;
@@ -176,7 +176,7 @@ nav > .logo > a > h4 {
   margin-bottom: 5px;
 }
 
-#products  .cards  .card  .price {
+#products .cards .card .price {
   font-family: var(--font-secondary);
   font-weight: var(--font-weight-2);
   font-size: 24px;
@@ -186,7 +186,7 @@ nav > .logo > a > h4 {
 
 .ratings {
   font-family: var(--font-primary);
-  color: #5E6366;
+  color: #5e6366;
   font-weight: var(--font-weight-3);
   font-size: 14px;
   margin-bottom: 5px;
@@ -200,20 +200,63 @@ nav > .logo > a > h4 {
   font-weight: var(--font-weight-4);
   color: var(--clr-8);
 }
-.card  .card-img {
+.card .card-img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
 
+/* ------------featured section---------- */
 
+.featured {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 4rem;
+}
 
+.featured .image img {
+  height: 100%;
+  width: 100%;
+}
+.featured .texts {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+.featured .texts .featured-title {
+  font-size: 30px;
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-4);
+  color: var(--clr-7);
+  margin-bottom: 1rem;
+}
+.featured .texts .featured-body {
+  font-size: 14px;
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-4);
+  color: var(--clr-8);
+  margin-bottom: 1rem;
+}
 
+.texts > button {
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-3);
+  color: var(--clr-3);
+  border: 2px solid var(--clr-2);
+  background-color: var(--clr-2);
+  font-size: 14px;
+  padding: 10px 14px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
 
-
-
-
-
+.texts > button:hover {
+  color: var(--clr-1);
+  border: 2px solid var(--clr-2);
+  background-color: var(--clr-3);
+}
 
 /* ----------responsive part---------------- */
 
@@ -223,7 +266,7 @@ nav > .logo > a > h4 {
     grid-gap: 1rem;
   }
 
-  #products  .cards  .card  .card-title {
+  #products .cards .card .card-title {
     font-size: 22px;
   }
 }
@@ -240,14 +283,13 @@ nav > .logo > a > h4 {
     grid-gap: 1rem;
   }
 
-  #products  .cards  .card  .card-title {
+  #products .cards .card .card-title {
     font-size: 17px;
   }
-  #products  .cards  .card  .price {
+  #products .cards .card .price {
     font-size: 17px;
   }
 }
-
 
 @media screen and (max-width: 668px) {
   header > nav {
@@ -272,11 +314,17 @@ nav > .logo > a > h4 {
     grid-gap: 1rem;
   }
 
-  #products  .cards  .card  .card-title {
+  #products .cards .card .card-title {
     font-size: 0.9rem;
   }
-  #products  .cards  .card  .price {
+  #products .cards .card .price {
     font-size: 1rem;
+  }
+
+  .featured {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 2rem;
   }
 }
 
@@ -302,4 +350,5 @@ nav > .logo > a > h4 {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 1rem;
   }
+
 }
